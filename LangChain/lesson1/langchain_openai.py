@@ -1,0 +1,16 @@
+import os
+os.environ["OPENAI_API_KEY"] = 'sk-888'
+from langchain_openai import ChatOpenAI
+chat = ChatOpenAI(model="gpt-3.5-turbo",
+                    temperature=0.8,
+                    max_tokens=60)
+from langchain.schema import (
+    HumanMessage,
+    SystemMessage
+)
+messages = [
+    SystemMessage(content="You are a creative AI."),
+    HumanMessage(content="请给我的花店起个名")
+]
+response = chat(messages)
+print(response)
