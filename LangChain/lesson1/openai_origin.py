@@ -1,5 +1,6 @@
 import os
-os.environ["OPENAI_API_KEY"] = 'sk-888'
+os.environ["OPENAI_API_KEY"] = 'sk-88'
+os.environ["OPENAI_BASE_URL"] = 'https://daily.w-l-h.xyz/v1'
 from openai import OpenAI
 client = OpenAI()
 response = client.chat.completions.create(  
