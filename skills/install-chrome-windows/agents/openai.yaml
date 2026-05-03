@@ -1,0 +1,3 @@
+display_name: Install Chrome on Windows
+short_description: Install Chrome despite winget or TLS failures.
+default_prompt: Install Google Chrome on this Windows machine, using fallback CDN download and admin MSI installation when needed.
